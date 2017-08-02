@@ -8,14 +8,22 @@
 
 import UIKit
 
-class LDMainViewController: UIViewController {
+class LDMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addChildVC("LDHomeViewController");
+        addChildVC("LDRankViewController")
+        addChildVC("LDDiscoverViewController")
+        addChildVC("LDProfileViewController")
     }
 
+    private func addChildVC(_ name : String){
+        let childVC = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController()!
+        addChildViewController(childVC)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

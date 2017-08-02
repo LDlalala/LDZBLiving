@@ -23,6 +23,8 @@
 		D66926F91F318EBA0064D232 /* LDRankViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66926F81F318EBA0064D232 /* LDRankViewController.storyboard */; };
 		D66926FB1F318EC70064D232 /* LDDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926FA1F318EC70064D232 /* LDDiscoverViewController.swift */; };
 		D66926FD1F318ECF0064D232 /* LDDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66926FC1F318ECF0064D232 /* LDDiscoverViewController.storyboard */; };
+		D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */; };
+		D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D66926F81F318EBA0064D232 /* LDRankViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDRankViewController.storyboard; sourceTree = "<group>"; };
 		D66926FA1F318EC70064D232 /* LDDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDDiscoverViewController.swift; sourceTree = "<group>"; };
 		D66926FC1F318ECF0064D232 /* LDDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDProfileViewController.swift; sourceTree = "<group>"; };
+		D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDProfileViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 		D66926E81F317FAA0064D232 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */,
+				D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 				D66926BD1F316E540064D232 /* Assets.xcassets in Resources */,
 				D66926F91F318EBA0064D232 /* LDRankViewController.storyboard in Resources */,
 				D66926F51F318E990064D232 /* LDHomeViewController.storyboard in Resources */,
+				D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */,
 				D66926FD1F318ECF0064D232 /* LDDiscoverViewController.storyboard in Resources */,
 				D66926BB1F316E540064D232 /* Main.storyboard in Resources */,
 			);
@@ -368,6 +375,7 @@
 				D66926F11F318E150064D232 /* LDNavigationViewController.swift in Sources */,
 				D66926F71F318EB30064D232 /* LDRankViewController.swift in Sources */,
 				D66926ED1F318DC10064D232 /* UIColor-extension.swift in Sources */,
+				D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */,
 				D66926B61F316E540064D232 /* AppDelegate.swift in Sources */,
 				D66926FB1F318EC70064D232 /* LDDiscoverViewController.swift in Sources */,
 			);
@@ -519,7 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LDZBLiving/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LD.www.LDZBLiving;
@@ -532,7 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LDZBLiving/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LD.www.LDZBLiving;

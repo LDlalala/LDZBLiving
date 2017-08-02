@@ -13,8 +13,15 @@ class LDDiscoverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpUI()
+        
+        view.backgroundColor = UIColor.randomColor()
     }
+    
+    private func setUpUI(){
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
