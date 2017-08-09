@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61614581F381072005C9F60 /* LDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614541F381072005C9F60 /* LDContentView.swift */; };
+		D61614591F381072005C9F60 /* LDPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614551F381072005C9F60 /* LDPageStyle.swift */; };
+		D616145A1F381072005C9F60 /* LDPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614561F381072005C9F60 /* LDPageView.swift */; };
+		D616145B1F381072005C9F60 /* LDTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614571F381072005C9F60 /* LDTitleView.swift */; };
+		D616145E1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616145D1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift */; };
+		D61614601F381930005C9F60 /* LDAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616145F1F381930005C9F60 /* LDAnchorViewController.swift */; };
+		D61614631F3819F8005C9F60 /* LDConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614621F3819F8005C9F60 /* LDConst.swift */; };
+		D61614661F3827F5005C9F60 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61614651F3827F5005C9F60 /* types.plist */; };
+		D61614691F3828BB005C9F60 /* LDHomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614681F3828BB005C9F60 /* LDHomeType.swift */; };
+		D616146B1F38292A005C9F60 /* LDBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616146A1F38292A005C9F60 /* LDBaseModel.swift */; };
+		D616147B1F3AF810005C9F60 /* LDHomeColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614791F3AF810005C9F60 /* LDHomeColCell.swift */; };
+		D616147C1F3AF810005C9F60 /* LDHomeColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D616147A1F3AF810005C9F60 /* LDHomeColCell.xib */; };
 		D66926B61F316E540064D232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926B51F316E540064D232 /* AppDelegate.swift */; };
 		D66926B81F316E540064D232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926B71F316E540064D232 /* ViewController.swift */; };
 		D66926BB1F316E540064D232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66926B91F316E540064D232 /* Main.storyboard */; };
@@ -45,6 +57,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D61614541F381072005C9F60 /* LDContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDContentView.swift; sourceTree = "<group>"; };
+		D61614551F381072005C9F60 /* LDPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageStyle.swift; sourceTree = "<group>"; };
+		D61614561F381072005C9F60 /* LDPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageView.swift; sourceTree = "<group>"; };
+		D61614571F381072005C9F60 /* LDTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDTitleView.swift; sourceTree = "<group>"; };
+		D616145D1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDWaterFallFlowLayout.swift; sourceTree = "<group>"; };
+		D616145F1F381930005C9F60 /* LDAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDAnchorViewController.swift; sourceTree = "<group>"; };
+		D61614621F3819F8005C9F60 /* LDConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDConst.swift; sourceTree = "<group>"; };
+		D61614651F3827F5005C9F60 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		D61614681F3828BB005C9F60 /* LDHomeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDHomeType.swift; sourceTree = "<group>"; };
+		D616146A1F38292A005C9F60 /* LDBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBaseModel.swift; sourceTree = "<group>"; };
+		D61614791F3AF810005C9F60 /* LDHomeColCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDHomeColCell.swift; sourceTree = "<group>"; };
+		D616147A1F3AF810005C9F60 /* LDHomeColCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDHomeColCell.xib; sourceTree = "<group>"; };
 		D66926B21F316E540064D232 /* LDZBLiving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDZBLiving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66926B51F316E540064D232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66926B71F316E540064D232 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +120,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61614531F381072005C9F60 /* LDPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D61614551F381072005C9F60 /* LDPageStyle.swift */,
+				D61614561F381072005C9F60 /* LDPageView.swift */,
+				D61614541F381072005C9F60 /* LDContentView.swift */,
+				D61614571F381072005C9F60 /* LDTitleView.swift */,
+			);
+			path = LDPageView;
+			sourceTree = "<group>";
+		};
+		D616145C1F38128C005C9F60 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				D616145D1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		D61614611F3819E5005C9F60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D61614621F3819F8005C9F60 /* LDConst.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D61614641F3827F5005C9F60 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D61614651F3827F5005C9F60 /* types.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D61614671F3828AE005C9F60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D61614681F3828BB005C9F60 /* LDHomeType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D61614781F3AF6EE005C9F60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D61614791F3AF810005C9F60 /* LDHomeColCell.swift */,
+				D616147A1F3AF810005C9F60 /* LDHomeColCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D66926A91F316E540064D232 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +227,7 @@
 		D66926E31F317FAA0064D232 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D61614641F3827F5005C9F60 /* Resource */,
 				D66926E41F317FAA0064D232 /* Base */,
 				D66926E71F317FAA0064D232 /* Main */,
 				D66926E61F317FAA0064D232 /* Home */,
@@ -164,6 +241,7 @@
 		D66926E41F317FAA0064D232 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D616146A1F38292A005C9F60 /* LDBaseModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -180,7 +258,11 @@
 		D66926E61F317FAA0064D232 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D61614781F3AF6EE005C9F60 /* View */,
+				D61614671F3828AE005C9F60 /* Model */,
+				D616145C1F38128C005C9F60 /* tools */,
 				D66926F21F318E810064D232 /* LDHomeViewController.swift */,
+				D616145F1F381930005C9F60 /* LDAnchorViewController.swift */,
 				D66926F41F318E990064D232 /* LDHomeViewController.storyboard */,
 			);
 			path = Home;
@@ -189,6 +271,8 @@
 		D66926E71F317FAA0064D232 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D61614611F3819E5005C9F60 /* Main */,
+				D61614531F381072005C9F60 /* LDPageView */,
 				D66926EB1F317FE10064D232 /* Extension */,
 				D66926EA1F317FE10064D232 /* Controller */,
 			);
@@ -340,6 +424,8 @@
 			files = (
 				D66926C01F316E540064D232 /* LaunchScreen.storyboard in Resources */,
 				D66926BD1F316E540064D232 /* Assets.xcassets in Resources */,
+				D616147C1F3AF810005C9F60 /* LDHomeColCell.xib in Resources */,
+				D61614661F3827F5005C9F60 /* types.plist in Resources */,
 				D66926F91F318EBA0064D232 /* LDRankViewController.storyboard in Resources */,
 				D66926F51F318E990064D232 /* LDHomeViewController.storyboard in Resources */,
 				D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */,
@@ -369,15 +455,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61614691F3828BB005C9F60 /* LDHomeType.swift in Sources */,
 				D66926B81F316E540064D232 /* ViewController.swift in Sources */,
 				D66926F31F318E810064D232 /* LDHomeViewController.swift in Sources */,
+				D61614581F381072005C9F60 /* LDContentView.swift in Sources */,
+				D61614601F381930005C9F60 /* LDAnchorViewController.swift in Sources */,
 				D66926EF1F318DF10064D232 /* LDMainViewController.swift in Sources */,
+				D616146B1F38292A005C9F60 /* LDBaseModel.swift in Sources */,
+				D616145E1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift in Sources */,
+				D61614591F381072005C9F60 /* LDPageStyle.swift in Sources */,
 				D66926F11F318E150064D232 /* LDNavigationViewController.swift in Sources */,
 				D66926F71F318EB30064D232 /* LDRankViewController.swift in Sources */,
+				D616145A1F381072005C9F60 /* LDPageView.swift in Sources */,
+				D616147B1F3AF810005C9F60 /* LDHomeColCell.swift in Sources */,
 				D66926ED1F318DC10064D232 /* UIColor-extension.swift in Sources */,
 				D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */,
 				D66926B61F316E540064D232 /* AppDelegate.swift in Sources */,
+				D616145B1F381072005C9F60 /* LDTitleView.swift in Sources */,
 				D66926FB1F318EC70064D232 /* LDDiscoverViewController.swift in Sources */,
+				D61614631F3819F8005C9F60 /* LDConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
