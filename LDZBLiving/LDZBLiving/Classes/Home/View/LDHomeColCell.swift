@@ -10,9 +10,20 @@ import UIKit
 
 class LDHomeColCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var albumImage: UIImageView!
+    @IBOutlet weak var liveImage: UIImageView!
+    @IBOutlet weak var nickNameLabel: UILabel!
+    @IBOutlet weak var onlinePeopleLabel: UIButton!
+    
+    
+    var anchorModel : LDAnchorModel? {
+        didSet {
+            albumImage.setImage(anchorModel!.isEvenIndex ? anchorModel?.pic74 : anchorModel?.pic51, "home_pic_default")
+            liveImage.isHidden = anchorModel?.live == 0
+            nickNameLabel.text = anchorModel?.name
+            onlinePeopleLabel.setTitle("\(anchorModel?.focus ?? 0)", for: .normal)
+            
+        }
     }
 
 }

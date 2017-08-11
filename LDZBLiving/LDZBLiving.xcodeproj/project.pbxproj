@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5FB1A6B607A3AB57D636F5 /* Pods_LDZBLiving.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E346C30029EB7B0FBB17FD /* Pods_LDZBLiving.framework */; };
 		D61614581F381072005C9F60 /* LDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614541F381072005C9F60 /* LDContentView.swift */; };
 		D61614591F381072005C9F60 /* LDPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614551F381072005C9F60 /* LDPageStyle.swift */; };
 		D616145A1F381072005C9F60 /* LDPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614561F381072005C9F60 /* LDPageView.swift */; };
@@ -19,6 +20,9 @@
 		D616146B1F38292A005C9F60 /* LDBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616146A1F38292A005C9F60 /* LDBaseModel.swift */; };
 		D616147B1F3AF810005C9F60 /* LDHomeColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614791F3AF810005C9F60 /* LDHomeColCell.swift */; };
 		D616147C1F3AF810005C9F60 /* LDHomeColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D616147A1F3AF810005C9F60 /* LDHomeColCell.xib */; };
+		D616147E1F3AFAA8005C9F60 /* LDAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616147D1F3AFAA8005C9F60 /* LDAnchorModel.swift */; };
+		D61614821F3C5E34005C9F60 /* LDNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614811F3C5E34005C9F60 /* LDNetworkTool.swift */; };
+		D61614841F3D4CBC005C9F60 /* LDHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61614831F3D4CBC005C9F60 /* LDHomeViewModel.swift */; };
 		D66926B61F316E540064D232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926B51F316E540064D232 /* AppDelegate.swift */; };
 		D66926B81F316E540064D232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926B71F316E540064D232 /* ViewController.swift */; };
 		D66926BB1F316E540064D232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66926B91F316E540064D232 /* Main.storyboard */; };
@@ -37,6 +41,9 @@
 		D66926FD1F318ECF0064D232 /* LDDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66926FC1F318ECF0064D232 /* LDDiscoverViewController.storyboard */; };
 		D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */; };
 		D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */; };
+		D68EDBCB1F3D63E8003C26C6 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */; };
+		D68EDBCF1F3D9285003C26C6 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */; };
+		D68EDBD01F3D9285003C26C6 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62E346C30029EB7B0FBB17FD /* Pods_LDZBLiving.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDZBLiving.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738E90635D30D0024CF358CD /* Pods-LDZBLiving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDZBLiving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDZBLiving/Pods-LDZBLiving.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB6879F54CB7CE03C97FD9C /* Pods-LDZBLiving.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDZBLiving.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDZBLiving/Pods-LDZBLiving.release.xcconfig"; sourceTree = "<group>"; };
 		D61614541F381072005C9F60 /* LDContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDContentView.swift; sourceTree = "<group>"; };
 		D61614551F381072005C9F60 /* LDPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageStyle.swift; sourceTree = "<group>"; };
 		D61614561F381072005C9F60 /* LDPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageView.swift; sourceTree = "<group>"; };
@@ -69,6 +79,9 @@
 		D616146A1F38292A005C9F60 /* LDBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBaseModel.swift; sourceTree = "<group>"; };
 		D61614791F3AF810005C9F60 /* LDHomeColCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDHomeColCell.swift; sourceTree = "<group>"; };
 		D616147A1F3AF810005C9F60 /* LDHomeColCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDHomeColCell.xib; sourceTree = "<group>"; };
+		D616147D1F3AFAA8005C9F60 /* LDAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDAnchorModel.swift; sourceTree = "<group>"; };
+		D61614811F3C5E34005C9F60 /* LDNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDNetworkTool.swift; sourceTree = "<group>"; };
+		D61614831F3D4CBC005C9F60 /* LDHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDHomeViewModel.swift; sourceTree = "<group>"; };
 		D66926B21F316E540064D232 /* LDZBLiving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDZBLiving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66926B51F316E540064D232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66926B71F316E540064D232 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +106,9 @@
 		D66926FC1F318ECF0064D232 /* LDDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDDiscoverViewController.storyboard; sourceTree = "<group>"; };
 		D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDProfileViewController.swift; sourceTree = "<group>"; };
 		D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDProfileViewController.storyboard; sourceTree = "<group>"; };
+		D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5FB1A6B607A3AB57D636F5 /* Pods_LDZBLiving.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +137,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28D417D4C463EBC48E2E8C79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				738E90635D30D0024CF358CD /* Pods-LDZBLiving.debug.xcconfig */,
+				CBB6879F54CB7CE03C97FD9C /* Pods-LDZBLiving.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		610413E15A3C5D926F08BF86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E346C30029EB7B0FBB17FD /* Pods_LDZBLiving.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D61614531F381072005C9F60 /* LDPageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D616145D1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift */,
+				D61614831F3D4CBC005C9F60 /* LDHomeViewModel.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -159,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				D61614681F3828BB005C9F60 /* LDHomeType.swift */,
+				D616147D1F3AFAA8005C9F60 /* LDAnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +208,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D61614801F3C5E0B005C9F60 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				D61614811F3C5E34005C9F60 /* LDNetworkTool.swift */,
+				D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		D66926A91F316E540064D232 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +224,8 @@
 				D66926C91F316E540064D232 /* LDZBLivingTests */,
 				D66926D41F316E540064D232 /* LDZBLivingUITests */,
 				D66926B31F316E540064D232 /* Products */,
+				28D417D4C463EBC48E2E8C79 /* Pods */,
+				610413E15A3C5D926F08BF86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +274,7 @@
 		D66926E31F317FAA0064D232 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D61614801F3C5E0B005C9F60 /* tools */,
 				D61614641F3827F5005C9F60 /* Resource */,
 				D66926E41F317FAA0064D232 /* Base */,
 				D66926E71F317FAA0064D232 /* Main */,
@@ -234,6 +282,7 @@
 				D66926E91F317FAA0064D232 /* Rank */,
 				D66926E51F317FAA0064D232 /* Discover */,
 				D66926E81F317FAA0064D232 /* Profile */,
+				D68EDBCC1F3D9270003C26C6 /* Live */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -314,6 +363,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		D68EDBCC1F3D9270003C26C6 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */,
+				D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66926DA1F316E540064D232 /* Build configuration list for PBXNativeTarget "LDZBLiving" */;
 			buildPhases = (
+				0C2E5BE6E35D55C39F5B4DB6 /* [CP] Check Pods Manifest.lock */,
 				D66926AE1F316E540064D232 /* Sources */,
 				D66926AF1F316E540064D232 /* Frameworks */,
 				D66926B01F316E540064D232 /* Resources */,
+				F378CF5CC8C8495E8EE2F0C4 /* [CP] Embed Pods Frameworks */,
+				19BC895E461D75F5E3C200A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -427,6 +488,7 @@
 				D616147C1F3AF810005C9F60 /* LDHomeColCell.xib in Resources */,
 				D61614661F3827F5005C9F60 /* types.plist in Resources */,
 				D66926F91F318EBA0064D232 /* LDRankViewController.storyboard in Resources */,
+				D68EDBD01F3D9285003C26C6 /* RoomViewController.xib in Resources */,
 				D66926F51F318E990064D232 /* LDHomeViewController.storyboard in Resources */,
 				D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */,
 				D66926FD1F318ECF0064D232 /* LDDiscoverViewController.storyboard in Resources */,
@@ -450,6 +512,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C2E5BE6E35D55C39F5B4DB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19BC895E461D75F5E3C200A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDZBLiving/Pods-LDZBLiving-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F378CF5CC8C8495E8EE2F0C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDZBLiving/Pods-LDZBLiving-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D66926AE1F316E540064D232 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -462,14 +572,19 @@
 				D61614601F381930005C9F60 /* LDAnchorViewController.swift in Sources */,
 				D66926EF1F318DF10064D232 /* LDMainViewController.swift in Sources */,
 				D616146B1F38292A005C9F60 /* LDBaseModel.swift in Sources */,
+				D61614841F3D4CBC005C9F60 /* LDHomeViewModel.swift in Sources */,
 				D616145E1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift in Sources */,
 				D61614591F381072005C9F60 /* LDPageStyle.swift in Sources */,
 				D66926F11F318E150064D232 /* LDNavigationViewController.swift in Sources */,
 				D66926F71F318EB30064D232 /* LDRankViewController.swift in Sources */,
 				D616145A1F381072005C9F60 /* LDPageView.swift in Sources */,
+				D61614821F3C5E34005C9F60 /* LDNetworkTool.swift in Sources */,
 				D616147B1F3AF810005C9F60 /* LDHomeColCell.swift in Sources */,
+				D68EDBCF1F3D9285003C26C6 /* RoomViewController.swift in Sources */,
 				D66926ED1F318DC10064D232 /* UIColor-extension.swift in Sources */,
+				D616147E1F3AFAA8005C9F60 /* LDAnchorModel.swift in Sources */,
 				D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */,
+				D68EDBCB1F3D63E8003C26C6 /* KingfisherExtension.swift in Sources */,
 				D66926B61F316E540064D232 /* AppDelegate.swift in Sources */,
 				D616145B1F381072005C9F60 /* LDTitleView.swift in Sources */,
 				D66926FB1F318EC70064D232 /* LDDiscoverViewController.swift in Sources */,
@@ -621,6 +736,7 @@
 		};
 		D66926DB1F316E540064D232 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738E90635D30D0024CF358CD /* Pods-LDZBLiving.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -634,6 +750,7 @@
 		};
 		D66926DC1F316E540064D232 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB6879F54CB7CE03C97FD9C /* Pods-LDZBLiving.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

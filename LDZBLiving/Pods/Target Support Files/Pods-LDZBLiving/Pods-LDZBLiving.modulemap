@@ -1,0 +1,6 @@
+framework module Pods_LDZBLiving {
+  umbrella header "Pods-LDZBLiving-umbrella.h"
+
+  export *
+  module * { export * }
+}

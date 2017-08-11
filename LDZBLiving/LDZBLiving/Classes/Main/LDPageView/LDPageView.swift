@@ -11,17 +11,18 @@ import UIKit
 class LDPageView: UIView {
 
     private var titles : [String]
-    private var childVcs : [LDAnchorViewController]
+    private var childVcs : [UIViewController]
     private var parent : UIViewController
     private var style : LDPageStyle
     
-    init(frame : CGRect ,titles : [String] ,style : LDPageStyle , childVcs : [LDAnchorViewController], parent : UIViewController) {
+    init(frame : CGRect ,titles : [String] ,style : LDPageStyle , childVcs : [UIViewController], parent : UIViewController) {
         // 在super前初始化变量
+        assert(titles.count == childVcs.count,"标题&控制器个数不相同,请检测")
         self.titles = titles
         self.childVcs = childVcs;
         self.parent = parent
         self.style = style
-        
+        self.parent.automaticallyAdjustsScrollViewInsets = false
         super.init(frame: frame)
         
         setupUI()

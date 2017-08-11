@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LDHomeColCell" id="gTV-IL-0wX" customClass="LDHomeColCell" customModule="LDZBLiving" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeColCellID" id="gTV-IL-0wX" customClass="LDHomeColCell" customModule="LDZBLiving" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="196" height="217"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -21,7 +21,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xTh-UF-Ggc">
                         <rect key="frame" x="0.0" y="0.0" width="196" height="217"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIc-26-Gel">
+                    <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="yIc-26-Gel">
                         <rect key="frame" x="141" y="10" width="45" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="QCZ-Ev-GFb"/>
@@ -30,21 +30,25 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyx-LQ-O1V">
                         <rect key="frame" x="10" y="187" width="120" height="20"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="9bG-hd-0v5"/>
                             <constraint firstAttribute="height" constant="20" id="m2v-M1-Qij"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMd-Y8-Mnk">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMd-Y8-Mnk">
                         <rect key="frame" x="136" y="187" width="50" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="PDT-Ut-v3F"/>
                             <constraint firstAttribute="width" constant="50" id="PfS-FM-myf"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2030" image="home_icon_people"/>
                     </button>
                 </subviews>
             </view>
@@ -61,7 +65,17 @@
                 <constraint firstItem="xTh-UF-Ggc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uA6-FG-bRa"/>
             </constraints>
             <size key="customSize" width="196" height="217"/>
+            <connections>
+                <outlet property="albumImage" destination="xTh-UF-Ggc" id="9pg-LN-fFn"/>
+                <outlet property="liveImage" destination="yIc-26-Gel" id="x7i-uv-sd1"/>
+                <outlet property="nickNameLabel" destination="zyx-LQ-O1V" id="tla-4M-sQe"/>
+                <outlet property="onlinePeopleLabel" destination="EMd-Y8-Mnk" id="8VG-Ak-pTc"/>
+            </connections>
             <point key="canvasLocation" x="-68" y="-20.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="home_icon_live" width="23" height="13"/>
+        <image name="home_icon_people" width="7" height="7"/>
+    </resources>
 </document>

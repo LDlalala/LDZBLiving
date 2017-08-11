@@ -13,3 +13,4 @@ let KScreenH = UIScreen.main.bounds.height
 
 let KNavgationBarH = 64
 let KStatusBarH = 20
+let KTabBarH = 44

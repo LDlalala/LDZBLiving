@@ -19,8 +19,8 @@ class LDContentView: UIView {
     
     weak var delegate : LDContentViewDelegate?
     
-    fileprivate var childVcs : [UIViewController] = [UIViewController]()
-    fileprivate var parent : UIViewController = UIViewController()
+    fileprivate var childVcs : [UIViewController]!
+    fileprivate var parent : UIViewController!
     fileprivate var startOffsetX : CGFloat = 0
     
     fileprivate lazy var collectionView : UICollectionView = {
@@ -41,12 +41,13 @@ class LDContentView: UIView {
         return collectionView
     }()
     
-    init(frame : CGRect , childVcs : [LDAnchorViewController] , parent : UIViewController) {
-        self.childVcs = childVcs
-        self.parent = parent
+    init(frame : CGRect , childVcs : [UIViewController] , parent : UIViewController) {
         
         super.init(frame: frame)
-        print(frame)
+        
+        self.childVcs = childVcs
+        self.parent = parent
+
         setupUI()
     }
     
@@ -59,12 +60,12 @@ class LDContentView: UIView {
 extension LDContentView {
     fileprivate func setupUI(){
         
-        // 添加conllection
-        addSubview(collectionView)
         
         for vc in childVcs {
             parent.addChildViewController(vc)
         }
+        // 添加conllection
+        addSubview(collectionView)
         
     }
 }
@@ -80,6 +81,16 @@ extension LDContentView : UICollectionViewDataSource{
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
         cell.backgroundColor = UIColor.randomColor()
+        
+        for subview in cell.contentView.subviews {
+            subview.removeFromSuperview()
+        }
+        
+        let childVc = childVcs[indexPath.row]
+        childVc.view.frame = cell.bounds
+        
+        cell.contentView.addSubview(childVc.view)
+        
         return cell
     }
 }

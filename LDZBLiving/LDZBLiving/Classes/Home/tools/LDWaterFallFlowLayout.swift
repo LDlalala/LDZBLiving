@@ -10,7 +10,7 @@ import UIKit
 
 // 数据源方法
 protocol LDWaterFallFlowLayoutDateSource : class {
-    func waterFall(_ waterFall : LDWaterFallFlowLayout ,item : Int) -> CGFloat
+    func waterFall(_ waterFall : LDWaterFallFlowLayout ,indexpath : IndexPath) -> CGFloat
     func numOfSection(_ waterFall : LDWaterFallFlowLayout) -> Int
 }
 
@@ -25,6 +25,7 @@ class LDWaterFallFlowLayout: UICollectionViewFlowLayout {
     
     fileprivate lazy var cellHeights : [CGFloat] = Array(repeating: self.sectionInset.top, count: self.cols)
     
+    fileprivate var startIndex = 0
 }
 
 // MARK:- 提前布局
@@ -38,7 +39,7 @@ extension LDWaterFallFlowLayout {
         let cellW = (collectionView!.bounds.width -  sectionInset.left - sectionInset.right - CGFloat(cols - 1) * minimumInteritemSpacing) / CGFloat(cols)
         
         
-        for i in 0..<itemsCount {
+        for i in startIndex..<itemsCount {
             // 创建Attributes对象
             let indexPath = NSIndexPath(item: i, section: 0)
             let attr : UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWith: indexPath as IndexPath)
@@ -50,7 +51,7 @@ extension LDWaterFallFlowLayout {
 
             let cellX = sectionInset.left + (cellW + minimumInteritemSpacing) * CGFloat(minIndex)
             // 设置随机高度值
-            let cellH = dateSource?.waterFall(self, item: i) ?? 100
+            let cellH = dateSource?.waterFall(self, indexpath: indexPath as IndexPath) ?? 100
             let cellY = minH
             
             attr.frame = CGRect(x: cellX, y: cellY, width: cellW, height: CGFloat(cellH))
@@ -60,6 +61,7 @@ extension LDWaterFallFlowLayout {
             
         }
         
+        startIndex = itemsCount
     }
 }
 

@@ -17,9 +17,7 @@ class LDHomeViewController: UIViewController {
         
         // 添加标题视图
         setupPageView()
-        
-        automaticallyAdjustsScrollViewInsets = false
-        
+                
        // view.backgroundColor = UIColor.white
     }
 
@@ -47,7 +45,7 @@ class LDHomeViewController: UIViewController {
     private func setupPageView(){
         let homeTypes = loadTitles()
         
-        let frame = CGRect(x: 0, y: KNavgationBarH, width: Int(KScreenW), height: Int(view.bounds.height))
+        let frame = CGRect(x: 0, y: KNavgationBarH, width: Int(KScreenW), height: Int(view.bounds.height) - KNavgationBarH - KTabBarH)
         let titles = homeTypes.map { (type : LDHomeType) -> String in
             return type.title
         }
