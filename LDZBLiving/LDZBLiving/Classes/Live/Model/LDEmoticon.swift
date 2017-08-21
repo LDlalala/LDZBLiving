@@ -9,5 +9,11 @@
 import UIKit
 
 class LDEmoticon: NSObject {
-
+    
+    var emoticonName : String = ""
+    
+    
+    init(emoticonName : String) {
+        self.emoticonName = emoticonName
+    }
 }

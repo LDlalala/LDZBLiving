@@ -42,6 +42,10 @@
 		D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */; };
 		D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */; };
 		D676AF811F4A846C0092C8B9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676AF801F4A846C0092C8B9 /* NibLoadable.swift */; };
+		D676AF831F4A90190092C8B9 /* LDEmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676AF821F4A90190092C8B9 /* LDEmoticonView.swift */; };
+		D676AF851F4ABD8A0092C8B9 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676AF841F4ABD8A0092C8B9 /* EmoticonViewModel.swift */; };
+		D676AF881F4AC75E0092C8B9 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = D676AF861F4AC75E0092C8B9 /* QHNormalEmotionSort.plist */; };
+		D676AF891F4AC75E0092C8B9 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = D676AF871F4AC75E0092C8B9 /* QHSohuGifSort.plist */; };
 		D68EDBCB1F3D63E8003C26C6 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */; };
 		D68EDBCF1F3D9285003C26C6 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */; };
 		D68EDBD01F3D9285003C26C6 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */; };
@@ -121,6 +125,10 @@
 		D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDProfileViewController.swift; sourceTree = "<group>"; };
 		D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDProfileViewController.storyboard; sourceTree = "<group>"; };
 		D676AF801F4A846C0092C8B9 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D676AF821F4A90190092C8B9 /* LDEmoticonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDEmoticonView.swift; sourceTree = "<group>"; };
+		D676AF841F4ABD8A0092C8B9 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		D676AF861F4AC75E0092C8B9 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		D676AF871F4AC75E0092C8B9 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
 		D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
@@ -215,6 +223,8 @@
 		D61614641F3827F5005C9F60 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D676AF861F4AC75E0092C8B9 /* QHNormalEmotionSort.plist */,
+				D676AF871F4AC75E0092C8B9 /* QHSohuGifSort.plist */,
 				D61614651F3827F5005C9F60 /* types.plist */,
 			);
 			path = Resource;
@@ -412,6 +422,7 @@
 			children = (
 				D6C23B3F1F47F41300096ECD /* LDChatToosView.swift */,
 				D6C23B361F47F3EE00096ECD /* LDChatToosView.xib */,
+				D676AF821F4A90190092C8B9 /* LDEmoticonView.swift */,
 				D6C23B411F47F43700096ECD /* LDEmoticonViewCell.swift */,
 				D6C23B371F47F3EE00096ECD /* LDEmoticonViewCell.xib */,
 			);
@@ -449,6 +460,7 @@
 		D6C23B491F47F9E100096ECD /* EmoticonViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D676AF841F4ABD8A0092C8B9 /* EmoticonViewModel.swift */,
 			);
 			path = EmoticonViewModel;
 			sourceTree = "<group>";
@@ -575,6 +587,8 @@
 			files = (
 				D6C23B3B1F47F3EE00096ECD /* LDChatToosView.xib in Resources */,
 				D6C23B3D1F47F3EE00096ECD /* LDGiftListView.xib in Resources */,
+				D676AF881F4AC75E0092C8B9 /* QHNormalEmotionSort.plist in Resources */,
+				D676AF891F4AC75E0092C8B9 /* QHSohuGifSort.plist in Resources */,
 				D66926C01F316E540064D232 /* LaunchScreen.storyboard in Resources */,
 				D6C23B3C1F47F3EE00096ECD /* LDEmoticonViewCell.xib in Resources */,
 				D66926BD1F316E540064D232 /* Assets.xcassets in Resources */,
@@ -667,6 +681,7 @@
 				D66926F31F318E810064D232 /* LDHomeViewController.swift in Sources */,
 				D6C23B441F47F44900096ECD /* LDGiftViewCell.swift in Sources */,
 				D61614581F381072005C9F60 /* LDContentView.swift in Sources */,
+				D676AF831F4A90190092C8B9 /* LDEmoticonView.swift in Sources */,
 				D61614601F381930005C9F60 /* LDAnchorViewController.swift in Sources */,
 				D66926EF1F318DF10064D232 /* LDMainViewController.swift in Sources */,
 				D616146B1F38292A005C9F60 /* LDBaseModel.swift in Sources */,
@@ -686,6 +701,7 @@
 				D66926ED1F318DC10064D232 /* UIColor-extension.swift in Sources */,
 				D616147E1F3AFAA8005C9F60 /* LDAnchorModel.swift in Sources */,
 				D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */,
+				D676AF851F4ABD8A0092C8B9 /* EmoticonViewModel.swift in Sources */,
 				D68EDBCB1F3D63E8003C26C6 /* KingfisherExtension.swift in Sources */,
 				D66926B61F316E540064D232 /* AppDelegate.swift in Sources */,
 				D616145B1F381072005C9F60 /* LDTitleView.swift in Sources */,

@@ -33,6 +33,16 @@ class RoomViewController: UIViewController ,Emitterable{
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        chatToolsView.inputTextField.resignFirstResponder()
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            self.chatToolsView.frame.origin.y = KScreenH
+        })
+    }
 }
 
 
@@ -56,7 +66,7 @@ extension RoomViewController {
     
     private func setupChatToolsView(){
         let frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: 44)
-        chatToolsView = LDChatToosView.init(frame: frame)
+        chatToolsView.frame = frame
         view.addSubview(chatToolsView)
         
         // 监听键盘弹起,设置chatToolsView的y值
@@ -96,12 +106,13 @@ extension RoomViewController {
     
     // 监听键盘弹起时改变frame
     @objc fileprivate func keyboardWillChangeFrame(_ nofi : Notification){
-        print(nofi)
         let duration = nofi.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
-        let keyboardH = nofi.userInfo?[UIKeyboardFrameEndUserInfoKey] as! CGFloat
+        let keyboardFrame = (nofi.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let inputViewY = keyboardFrame.origin.y - chatToolsView.frame.height
         
         UIView.animate(withDuration: duration , animations: {
-            self.chatToolsView.frame.origin.y -= (keyboardH + self.chatToolsView.frame.height)
+            UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: 7)!)
+            self.chatToolsView.frame.origin.y = inputViewY
         })
     }
 }

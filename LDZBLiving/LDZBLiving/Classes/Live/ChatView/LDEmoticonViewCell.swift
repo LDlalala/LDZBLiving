@@ -12,5 +12,11 @@ class LDEmoticonViewCell: UICollectionViewCell , NibLoadable{
     
     @IBOutlet weak var iconImageView: UIImageView!
     
+    var emoticon : LDEmoticon? {
+        didSet { // 监听给模型赋值后赋值给控件
+           self.iconImageView.image = UIImage(named: emoticon!.emoticonName)
+        }
+    }
+    
     
 }

@@ -59,9 +59,8 @@ extension LDPageCollectionViewLayout{
                 attributesArray.append(attr)
             }
             // 前一组中页数
-            prePageCount += itemCount / (cols * row) + 1
+            prePageCount += (itemCount - 1) / (cols * row) + 1
         }
-        
         // 计算最大的宽度
         maxWidth = CGFloat(prePageCount) * collectionView!.bounds.width
         

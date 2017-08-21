@@ -50,7 +50,7 @@ class LDPageCollectionView: UIView {
         let titleFrame = CGRect(x: 0, y: titleY, width: bounds.width, height: style.titleHeight)
         titleView = LDTitleView(titles: titles, frame: titleFrame, style:style)
         addSubview(titleView)
-        titleView.backgroundColor = UIColor.red
+        titleView.backgroundColor = UIColor.gray
         titleView.delegate = self
         
         // 2 添加控制点
@@ -59,9 +59,8 @@ class LDPageCollectionView: UIView {
         let pageControlFrame = CGRect(x: 0, y: pageControlY, width: bounds.width, height: pageControlH)
         pageControl = UIPageControl(frame: pageControlFrame)
         addSubview(pageControl)
-        pageControl.numberOfPages = 4
         pageControl.isEnabled = false
-        pageControl.backgroundColor = UIColor.orange
+        pageControl.backgroundColor = UIColor.black
         
         // 3 添加表情
         let collectionViewH : CGFloat = bounds.height - style.titleHeight - pageControlH
@@ -109,7 +108,10 @@ extension LDPageCollectionView : UICollectionViewDataSource{
         // 如果没有值就默认为0
         let itemCount = dataSource?.collectionView(self, numberOfItemsInSection: section) ?? 0
         
-       // pageControl.numberOfPages = (itemCount - 1) / (layout.cols * layout.row) + 1
+        if section == 0 {
+            
+            pageControl.numberOfPages = (itemCount - 1) / (layout.cols * layout.row) + 1
+        }
         
         return itemCount
     }
