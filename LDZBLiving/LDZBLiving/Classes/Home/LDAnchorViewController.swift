@@ -94,8 +94,9 @@ extension LDAnchorViewController : UICollectionViewDataSource ,UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let rootVC = LDHomeViewController()
-        navigationController?.pushViewController(rootVC, animated: false)
+        let RoomVC = RoomViewController()
+        RoomVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(RoomVC, animated: true)
     }
 }
 

@@ -41,9 +41,23 @@
 		D66926FD1F318ECF0064D232 /* LDDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66926FC1F318ECF0064D232 /* LDDiscoverViewController.storyboard */; };
 		D66926FF1F31AFA70064D232 /* LDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */; };
 		D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */; };
+		D676AF811F4A846C0092C8B9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676AF801F4A846C0092C8B9 /* NibLoadable.swift */; };
 		D68EDBCB1F3D63E8003C26C6 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */; };
 		D68EDBCF1F3D9285003C26C6 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */; };
 		D68EDBD01F3D9285003C26C6 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */; };
+		D6C23B331F47F19900096ECD /* LDPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B311F47F19900096ECD /* LDPageCollectionView.swift */; };
+		D6C23B341F47F19900096ECD /* LDPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B321F47F19900096ECD /* LDPageCollectionViewLayout.swift */; };
+		D6C23B3B1F47F3EE00096ECD /* LDChatToosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C23B361F47F3EE00096ECD /* LDChatToosView.xib */; };
+		D6C23B3C1F47F3EE00096ECD /* LDEmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C23B371F47F3EE00096ECD /* LDEmoticonViewCell.xib */; };
+		D6C23B3D1F47F3EE00096ECD /* LDGiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C23B391F47F3EE00096ECD /* LDGiftListView.xib */; };
+		D6C23B3E1F47F3EE00096ECD /* LDGiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C23B3A1F47F3EE00096ECD /* LDGiftViewCell.xib */; };
+		D6C23B401F47F41300096ECD /* LDChatToosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B3F1F47F41300096ECD /* LDChatToosView.swift */; };
+		D6C23B421F47F43700096ECD /* LDEmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B411F47F43700096ECD /* LDEmoticonViewCell.swift */; };
+		D6C23B441F47F44900096ECD /* LDGiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B431F47F44900096ECD /* LDGiftViewCell.swift */; };
+		D6C23B461F47F45800096ECD /* LDGiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B451F47F45800096ECD /* LDGiftListView.swift */; };
+		D6C23B4B1F47F9F300096ECD /* LDEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B4A1F47F9F300096ECD /* LDEmoticonPackage.swift */; };
+		D6C23B4D1F47FA0C00096ECD /* LDEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C23B4C1F47FA0C00096ECD /* LDEmoticon.swift */; };
+		D6CDDBE51F3DA388008E7E4D /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDDBE41F3DA388008E7E4D /* Emitterable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,9 +120,23 @@
 		D66926FC1F318ECF0064D232 /* LDDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDDiscoverViewController.storyboard; sourceTree = "<group>"; };
 		D66926FE1F31AFA70064D232 /* LDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDProfileViewController.swift; sourceTree = "<group>"; };
 		D66927001F31AFB30064D232 /* LDProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LDProfileViewController.storyboard; sourceTree = "<group>"; };
+		D676AF801F4A846C0092C8B9 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		D68EDBCA1F3D63E8003C26C6 /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
 		D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		D6C23B311F47F19900096ECD /* LDPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageCollectionView.swift; sourceTree = "<group>"; };
+		D6C23B321F47F19900096ECD /* LDPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		D6C23B361F47F3EE00096ECD /* LDChatToosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDChatToosView.xib; sourceTree = "<group>"; };
+		D6C23B371F47F3EE00096ECD /* LDEmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDEmoticonViewCell.xib; sourceTree = "<group>"; };
+		D6C23B391F47F3EE00096ECD /* LDGiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDGiftListView.xib; sourceTree = "<group>"; };
+		D6C23B3A1F47F3EE00096ECD /* LDGiftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDGiftViewCell.xib; sourceTree = "<group>"; };
+		D6C23B3F1F47F41300096ECD /* LDChatToosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDChatToosView.swift; sourceTree = "<group>"; };
+		D6C23B411F47F43700096ECD /* LDEmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDEmoticonViewCell.swift; sourceTree = "<group>"; };
+		D6C23B431F47F44900096ECD /* LDGiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDGiftViewCell.swift; sourceTree = "<group>"; };
+		D6C23B451F47F45800096ECD /* LDGiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDGiftListView.swift; sourceTree = "<group>"; };
+		D6C23B4A1F47F9F300096ECD /* LDEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDEmoticonPackage.swift; sourceTree = "<group>"; };
+		D6C23B4C1F47FA0C00096ECD /* LDEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDEmoticon.swift; sourceTree = "<group>"; };
+		D6CDDBE41F3DA388008E7E4D /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +185,8 @@
 		D61614531F381072005C9F60 /* LDPageView */ = {
 			isa = PBXGroup;
 			children = (
+				D6C23B311F47F19900096ECD /* LDPageCollectionView.swift */,
+				D6C23B321F47F19900096ECD /* LDPageCollectionViewLayout.swift */,
 				D61614551F381072005C9F60 /* LDPageStyle.swift */,
 				D61614561F381072005C9F60 /* LDPageView.swift */,
 				D61614541F381072005C9F60 /* LDContentView.swift */,
@@ -320,6 +350,7 @@
 		D66926E71F317FAA0064D232 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D6CDDBE31F3DA378008E7E4D /* Protocal */,
 				D61614611F3819E5005C9F60 /* Main */,
 				D61614531F381072005C9F60 /* LDPageView */,
 				D66926EB1F317FE10064D232 /* Extension */,
@@ -366,10 +397,69 @@
 		D68EDBCC1F3D9270003C26C6 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				D6C23B481F47F9E100096ECD /* ViewModel */,
+				D6C23B471F47F9E100096ECD /* Model */,
+				D6C23B381F47F3EE00096ECD /* GiftView */,
+				D6C23B351F47F3EE00096ECD /* ChatView */,
 				D68EDBCD1F3D9285003C26C6 /* RoomViewController.swift */,
 				D68EDBCE1F3D9285003C26C6 /* RoomViewController.xib */,
 			);
 			path = Live;
+			sourceTree = "<group>";
+		};
+		D6C23B351F47F3EE00096ECD /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				D6C23B3F1F47F41300096ECD /* LDChatToosView.swift */,
+				D6C23B361F47F3EE00096ECD /* LDChatToosView.xib */,
+				D6C23B411F47F43700096ECD /* LDEmoticonViewCell.swift */,
+				D6C23B371F47F3EE00096ECD /* LDEmoticonViewCell.xib */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		D6C23B381F47F3EE00096ECD /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				D6C23B451F47F45800096ECD /* LDGiftListView.swift */,
+				D6C23B391F47F3EE00096ECD /* LDGiftListView.xib */,
+				D6C23B431F47F44900096ECD /* LDGiftViewCell.swift */,
+				D6C23B3A1F47F3EE00096ECD /* LDGiftViewCell.xib */,
+			);
+			path = GiftView;
+			sourceTree = "<group>";
+		};
+		D6C23B471F47F9E100096ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C23B4A1F47F9F300096ECD /* LDEmoticonPackage.swift */,
+				D6C23B4C1F47FA0C00096ECD /* LDEmoticon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6C23B481F47F9E100096ECD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6C23B491F47F9E100096ECD /* EmoticonViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6C23B491F47F9E100096ECD /* EmoticonViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmoticonViewModel;
+			sourceTree = "<group>";
+		};
+		D6CDDBE31F3DA378008E7E4D /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				D6CDDBE41F3DA388008E7E4D /* Emitterable.swift */,
+				D676AF801F4A846C0092C8B9 /* NibLoadable.swift */,
+			);
+			path = Protocal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,13 +573,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C23B3B1F47F3EE00096ECD /* LDChatToosView.xib in Resources */,
+				D6C23B3D1F47F3EE00096ECD /* LDGiftListView.xib in Resources */,
 				D66926C01F316E540064D232 /* LaunchScreen.storyboard in Resources */,
+				D6C23B3C1F47F3EE00096ECD /* LDEmoticonViewCell.xib in Resources */,
 				D66926BD1F316E540064D232 /* Assets.xcassets in Resources */,
 				D616147C1F3AF810005C9F60 /* LDHomeColCell.xib in Resources */,
 				D61614661F3827F5005C9F60 /* types.plist in Resources */,
 				D66926F91F318EBA0064D232 /* LDRankViewController.storyboard in Resources */,
 				D68EDBD01F3D9285003C26C6 /* RoomViewController.xib in Resources */,
 				D66926F51F318E990064D232 /* LDHomeViewController.storyboard in Resources */,
+				D6C23B3E1F47F3EE00096ECD /* LDGiftViewCell.xib in Resources */,
 				D66927011F31AFB30064D232 /* LDProfileViewController.storyboard in Resources */,
 				D66926FD1F318ECF0064D232 /* LDDiscoverViewController.storyboard in Resources */,
 				D66926BB1F316E540064D232 /* Main.storyboard in Resources */,
@@ -566,8 +660,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61614691F3828BB005C9F60 /* LDHomeType.swift in Sources */,
+				D676AF811F4A846C0092C8B9 /* NibLoadable.swift in Sources */,
+				D6CDDBE51F3DA388008E7E4D /* Emitterable.swift in Sources */,
 				D66926B81F316E540064D232 /* ViewController.swift in Sources */,
+				D6C23B4D1F47FA0C00096ECD /* LDEmoticon.swift in Sources */,
 				D66926F31F318E810064D232 /* LDHomeViewController.swift in Sources */,
+				D6C23B441F47F44900096ECD /* LDGiftViewCell.swift in Sources */,
 				D61614581F381072005C9F60 /* LDContentView.swift in Sources */,
 				D61614601F381930005C9F60 /* LDAnchorViewController.swift in Sources */,
 				D66926EF1F318DF10064D232 /* LDMainViewController.swift in Sources */,
@@ -575,10 +673,14 @@
 				D61614841F3D4CBC005C9F60 /* LDHomeViewModel.swift in Sources */,
 				D616145E1F3812A3005C9F60 /* LDWaterFallFlowLayout.swift in Sources */,
 				D61614591F381072005C9F60 /* LDPageStyle.swift in Sources */,
+				D6C23B4B1F47F9F300096ECD /* LDEmoticonPackage.swift in Sources */,
+				D6C23B421F47F43700096ECD /* LDEmoticonViewCell.swift in Sources */,
 				D66926F11F318E150064D232 /* LDNavigationViewController.swift in Sources */,
 				D66926F71F318EB30064D232 /* LDRankViewController.swift in Sources */,
 				D616145A1F381072005C9F60 /* LDPageView.swift in Sources */,
 				D61614821F3C5E34005C9F60 /* LDNetworkTool.swift in Sources */,
+				D6C23B461F47F45800096ECD /* LDGiftListView.swift in Sources */,
+				D6C23B401F47F41300096ECD /* LDChatToosView.swift in Sources */,
 				D616147B1F3AF810005C9F60 /* LDHomeColCell.swift in Sources */,
 				D68EDBCF1F3D9285003C26C6 /* RoomViewController.swift in Sources */,
 				D66926ED1F318DC10064D232 /* UIColor-extension.swift in Sources */,
@@ -587,6 +689,8 @@
 				D68EDBCB1F3D63E8003C26C6 /* KingfisherExtension.swift in Sources */,
 				D66926B61F316E540064D232 /* AppDelegate.swift in Sources */,
 				D616145B1F381072005C9F60 /* LDTitleView.swift in Sources */,
+				D6C23B341F47F19900096ECD /* LDPageCollectionViewLayout.swift in Sources */,
+				D6C23B331F47F19900096ECD /* LDPageCollectionView.swift in Sources */,
 				D66926FB1F318EC70064D232 /* LDDiscoverViewController.swift in Sources */,
 				D61614631F3819F8005C9F60 /* LDConst.swift in Sources */,
 			);

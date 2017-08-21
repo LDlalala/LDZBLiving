@@ -122,8 +122,11 @@ extension LDTitleView {
         targetLabel.textColor = style.selectColor
         currentIndex = targetLabel.tag
         
-        // 点击的时候标题居中
-        adjustLabelPosition(targetLabel)
+        if style.isScrollEnadle {
+            
+            // 点击的时候标题居中
+            adjustLabelPosition(targetLabel)
+        }
         
         // 通知contentView滚动到对应的view上
         delegate?.titleView(self, targetIndex: currentIndex)
@@ -148,16 +151,31 @@ extension LDTitleView {
 // MARK:- 实现TitleView的代理方法
 extension LDTitleView : LDContentViewDelegate{
     func contentView(_ contentView : LDContentView, targetIndex : Int, progress : CGFloat){
-        let currentLabel = titleLabels[currentIndex]
-        let targetLabel = titleLabels[targetIndex]
-        currentLabel.textColor = style.normalColor
-        targetLabel.textColor = style.selectColor
-        currentIndex = targetIndex
-        // 点击的时候标题居中
-        adjustLabelPosition(targetLabel)
-
+        detailTitleLabel(targetIndex: targetIndex, progress: progress)
     }
     
+    
+    fileprivate func detailTitleLabel(targetIndex : Int,progress : CGFloat){
+        let currentLabel = titleLabels[currentIndex]
+        let targetLabel = titleLabels[targetIndex]
+        currentLabel.textColor = UIColor(r: 255 * progress, g: 255 * progress, b: 255 * progress)
+        targetLabel.textColor = style.selectColor
+        currentIndex = targetIndex
+        
+        if style.isScrollEnadle {
+            // 点击的时候标题居中
+            adjustLabelPosition(targetLabel)
+        }
+    }
 }
+
+
+// MARK:- 暴露给外界的方法
+extension LDTitleView {
+    func setTitleLabel(targetIndex : Int,progress : CGFloat){
+        detailTitleLabel(targetIndex: targetIndex, progress: progress)
+    }
+}
+
 
 
