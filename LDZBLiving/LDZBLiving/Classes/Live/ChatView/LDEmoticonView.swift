@@ -10,6 +10,8 @@ import UIKit
 
 class LDEmoticonView: UIView {
 
+    // 定义一个闭包在点击cell时将emoticon传递出去
+    var emoticonClickCallBlock : ((LDEmoticon) -> Void)?
     
     
     override init(frame: CGRect) {
@@ -40,6 +42,7 @@ extension LDEmoticonView {
         let style = LDPageStyle()
         let pageCollectionView = LDPageCollectionView(frame: frame, titles: ["普通","粉丝专属"], isTitleInTop: false, layout: layout, style: style)
         pageCollectionView.dataSource = self
+        pageCollectionView.delegate = self
         addSubview(pageCollectionView)
         
         pageCollectionView.register(nib: UINib(nibName: "LDEmoticonViewCell", bundle: nil), identifier: "LDEmoticonViewCell")
@@ -62,6 +65,16 @@ extension LDEmoticonView : LDPageCollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LDEmoticonViewCell", for: indexPath) as! LDEmoticonViewCell
         cell.emoticon = EmoticonViewModel.shareEmoticonModel.packages[indexPath.section].emoticons[indexPath.item]
         return cell
+    }
+}
+
+// MARK:- 实现代理方法LDPageCollectionViewDelegate
+extension LDEmoticonView : LDPageCollectionViewDelegate{
+    func collectionView(_ pageCollectionView: LDPageCollectionView, _ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let emoticon = EmoticonViewModel.shareEmoticonModel.packages[indexPath.section].emoticons[indexPath.item]
+        if let emoticonClickCallBlock = emoticonClickCallBlock {
+            emoticonClickCallBlock(emoticon)
+        }
     }
 }
 

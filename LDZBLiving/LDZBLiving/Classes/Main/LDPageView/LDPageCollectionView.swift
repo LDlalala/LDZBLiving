@@ -15,9 +15,15 @@ protocol LDPageCollectionViewDataSource : class{
     func collectionView(_ pageCollectionView: LDPageCollectionView, _ collectionView : UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell;
 }
 
+protocol LDPageCollectionViewDelegate : class {
+    func collectionView(_ pageCollectionView: LDPageCollectionView,_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    
+}
+
 class LDPageCollectionView: UIView {
     
     weak var dataSource : LDPageCollectionViewDataSource?
+    weak var delegate : LDPageCollectionViewDelegate?
     
     fileprivate var titleView : LDTitleView!
     fileprivate var titles : [String]
@@ -93,6 +99,10 @@ extension LDPageCollectionView{
         collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
     
+    
+    func reloadData(){
+        collectionView.reloadData()
+    }
 }
 
 
@@ -132,6 +142,10 @@ extension LDPageCollectionView : UICollectionViewDelegate{
         if !decelerate {
             scrollDidEnd()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.collectionView(self, collectionView, didSelectItemAt: indexPath)
     }
     
     // 滚动结束

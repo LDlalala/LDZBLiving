@@ -39,21 +39,44 @@ extension LDChatToosView {
         inputTextField.rightViewMode = .always
         inputTextField.allowsEditingTextAttributes = true
         
-        
+        // 监听到输入框中有表情输入
+        emoticonView.emoticonClickCallBlock = { [weak self] emoticon in
+            
+            // 如果是删除的图片,那么将此出实现删除功能
+            if emoticon.emoticonName == "delete-n" {
+                self?.inputTextField.deleteBackward()
+                return
+            }
+            
+            // 记录之前光标位置
+            guard let range = self?.inputTextField.selectedTextRange else {return}
+            // 将输入的表情插入到光标所在位置
+            self?.inputTextField.replace(range, withText: emoticon.emoticonName)
+            
+        }
     }
 }
 
 
 // MARK:- 事件处理
 extension LDChatToosView {
+    
     // 输入框点击
     @IBAction func textFieldDidEdit(_ sender: UITextField) {
-        
+        sendMsgBtn.isEnabled = sender.text!.characters.count != 0
     }
     
     // 发送按钮点击
     @IBAction func sendBtnClick(_ sender: UIButton) {
         
+        // 获取内容
+        let message = inputTextField.text!
+        
+        // 将UITextField设为nil
+        inputTextField.text = ""
+        sender.isEnabled = false
+        
+        // 将内容传递出去发送给服务器
         
     }
     

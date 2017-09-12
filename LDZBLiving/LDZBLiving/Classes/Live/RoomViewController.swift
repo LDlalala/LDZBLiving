@@ -15,6 +15,8 @@ class RoomViewController: UIViewController ,Emitterable{
     
     // 输入框view添加
     var chatToolsView : LDChatToosView = LDChatToosView.loadNibView()
+    // 礼物界面
+    var giftListView : LDGiftListView = LDGiftListView.loadNibView()
     
     
     // MARK: 系统回调函数
@@ -54,6 +56,9 @@ extension RoomViewController {
         
         // 添加聊天界面的view
         setupChatToolsView()
+        
+        // 添加礼物界面
+        setupGiftListView()
     }
     
     private func setupBlurView() {
@@ -61,16 +66,24 @@ extension RoomViewController {
         let blurView = UIVisualEffectView(effect: blur)
         blurView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         blurView.frame = bgImageView.bounds
+        blurView.autoresizingMask = [.flexibleTopMargin,.flexibleWidth]
         bgImageView.addSubview(blurView)
     }
     
     private func setupChatToolsView(){
-        let frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: 44)
-        chatToolsView.frame = frame
+        chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: 44)
         view.addSubview(chatToolsView)
         
         // 监听键盘弹起,设置chatToolsView的y值
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+    }
+    
+    // 添加礼物界面
+    private func setupGiftListView(){
+        giftListView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: 300)
+        giftListView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        view.addSubview(giftListView)
+       // print("giftListView.frame" + "\(giftListView.frame)")
     }
 }
 
@@ -92,7 +105,9 @@ extension RoomViewController {
         case 1:
             print("点击了分享")
         case 2:
-            print("点击了礼物")
+            giftListView.frame.origin.y -= giftListView.frame.height
+           // print("giftListView.frame.y" + "\(giftListView.frame.origin.y)")
+           // print("点击了礼物")
         case 3:
             print("点击了更多")
         case 4:
@@ -111,6 +126,7 @@ extension RoomViewController {
         let inputViewY = keyboardFrame.origin.y - chatToolsView.frame.height
         
         UIView.animate(withDuration: duration , animations: {
+            // setAnimationCurve来定义动画加速或减速方式
             UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: 7)!)
             self.chatToolsView.frame.origin.y = inputViewY
         })
